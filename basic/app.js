@@ -42,3 +42,21 @@ console.log(daysOfWeek);
 
 const toBuy = ["potato", "tomato", "pizza"];
 toBuy.push("Kimbab");
+
+
+
+// 2.6 Objects
+const player = {
+    name: "nico",
+    points: 10,
+    fat: true,
+};
+console.log(player);
+console.log(player.name);
+console.log(player["name"]);
+
+console.log(player);
+player.fat = false;
+player.lastName = "potato";    // 새로운 key를 추가함 ( lastName )
+player.points = player.points + 15;
+console.log(player);
