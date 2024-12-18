@@ -34,7 +34,7 @@ const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"];
 console.log(daysOfWeek);
 
 // Get Item from Array
-console.log(daysOfWeek[4]);     // fri <- 5번째
+console.log(daysOfWeek[4]);     // 5번째 -> "fri"
 
 // Add one more day to the array
 daysOfWeek.push("sun");     // 배열 마지막 비트에 추가
