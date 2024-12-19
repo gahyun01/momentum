@@ -82,7 +82,6 @@ sayHello("lynn", 21);
 // plus();    // NaN (Not a Number) - 값이 없음. <- a와 b에 값을 넣어줘야함.
 // plus(8, 60);
 
-
 // simple calculator2
 function plus(firstNumber, secondNumber){
     console.log(firstNumber + secondNumber);
@@ -103,3 +102,60 @@ const player1 = {
 
 console.log(player1.name);
 player1.sayHello("lynn");
+
+
+
+// 2.9 Recap && 2.10 Recap 2
+// const c = 5;
+// console.log(c);
+
+// const isNicolasFat = true;
+// isNicolasFat = false;   // error - const는 값을 변경할 수 없음.
+let isNicolasFat = true;
+isNicolasFat = false;   // let은 값을 변경할 수 있음.
+
+let hello;
+console.log(hello);     // undefined
+
+const me = "sexy";
+const days = [1, 2, false, true, null, undefined, "text", me];
+
+const toBuys = ["potato", "tomato", "pizza"];
+// console.log(toBuys[2]);
+console.log(toBuys);
+toBuys[2] = "water";    // 3번째 요소를 변경함.
+console.log(toBuys);
+toBuy.push("meat");     // 배열 마지막에 추가함.
+console.log(toBuys);
+
+const player2 = {
+    name: "Nico",
+    age: 98,
+};
+console.log(player2.name);
+// console.log(player2, console);  // console은 object임.
+player2.name = "nicolas";
+console.log(player2);
+player2.sexy = "soon";    // 새로운 key를 추가함.
+console.log(player2);
+
+function plus1(){
+    console.log(2 + 2);
+}
+plus1();
+
+function plus2(potato, salad){
+    console.log(potato + salad);
+};
+
+plus2(5, 10);
+plus2(1.33453, 9898);
+plus2(9898, 1.33453);
+
+function minusFive(potato){
+    console.log(potato - 5);
+};
+// console.log(potato);    // error - potato는 함수 내부에서만 사용 가능.
+
+minusFive(5, 10, 12, 34, 4, 5, 6, 7);    // 처음에 들어온 값만 사용
+
