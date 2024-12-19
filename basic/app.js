@@ -159,3 +159,12 @@ function minusFive(potato){
 
 minusFive(5, 10, 12, 34, 4, 5, 6, 7);    // 처음에 들어온 값만 사용
 
+
+
+// 2.11 Returns
+const age = 96;
+function calculateKrAge(ageOfForeigner){
+    return ageOfForeigner + 2;   // return을 사용하여 값을 반환함.
+}
+const krAge = calculateKrAge(age);
+console.log(krAge);

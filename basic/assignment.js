@@ -1,4 +1,4 @@
-// 2.10 Recap 2
+// 2.11 Returns
 console.log("Calculator");
 const Calculator = {
     plus: function(a, b){
@@ -23,9 +23,5 @@ const timesResult = Calculator.times(10, minusResult);
 const divideResult = Calculator.divide(timesResult, plusResult);
 const powerResult = Calculator.power(divideResult, minusResult);
 
-const age = 96;
-function calculateKrAge(ageOfForeigner){
-    return ageOfForeigner + 2;   
-}
-const krAge = calculateKrAge(age);
-console.log(krAge);
+console.log(plusResult);
+console.log(minusResult);
