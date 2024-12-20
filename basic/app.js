@@ -168,3 +168,46 @@ function calculateKrAge(ageOfForeigner){
 }
 const krAge = calculateKrAge(age);
 console.log(krAge);
+
+
+
+// 2.13 Conditionals
+const age1 = prompt("How old are you?");
+console.log(age1); // prompt에서 사용자가 값을 입력하지 않고 취소를 누르면 null이 출력됨.
+console.log(typeof age1);    // age1의 type을 확인함. ( 항상 string임 )
+
+// parseInt를 사용하여 string타입을 number타입으로 변환함.
+console.log(typeof "15", typeof parseInt("15"));
+console.log(typeof age1, typeof parseInt(age1));
+
+
+
+// 2.14 Conditionals part Two
+console.log(isNaN(age1)); // 숫자 == True, 숫자 != False
+
+if(isNaN(age1)){
+    console.log("Please write a number");
+}else{
+    console.log("Thank you for writing your age.");
+}
+
+
+
+// 2.15 Conditionals part Three
+console.log(age1);
+
+if(isNaN(age1) || age1 < 0){
+    console.log("Please write a real positive number");
+}
+else if(age1 < 18){
+    console.log("You too young.");
+}
+else if(age1 >= 18 && age1 <= 50){
+    console.log("You can drink");
+}
+else if(age1 > 50 && age1 <= 80){
+    console.log("You should exercise");
+}
+else if(age1>80){
+    console.log("You can do whatever you want.");
+}
