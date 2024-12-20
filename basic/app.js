@@ -218,3 +218,13 @@ if(isNaN(age1) || age1 < 0){
 
 // 3.0 The Document Object
 document.title = "Hello From JS!";
+
+
+
+// 3.1 HTML in Javascript
+const title = document.getElementById("title");
+// console.log(title);
+console.dir(title);
+title.innerText = "Got you!";
+console.log(title.id);
+console.log(title.className);
