@@ -228,3 +228,17 @@ console.dir(title);
 title.innerText = "Got you!";
 console.log(title.id);
 console.log(title.className);
+
+
+
+// 3.2 Searching For Elements
+const hellos = document.getElementsByClassName("hello");
+// console.log(hellos);
+
+// 오직 하나의 element만 가져옴.
+const title1 = document.querySelector(".hello h1");
+console.log(title1);
+
+// 모든 element를 가져옴.
+const title2 = document.querySelectorAll(".hello h1");
+console.log(title2);
