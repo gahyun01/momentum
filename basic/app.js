@@ -172,7 +172,7 @@ console.log(krAge);
 
 
 // 2.13 Conditionals
-const age1 = prompt("How old are you?");
+const age1 = parseInt(prompt("How old are you?"));
 console.log(age1); // prompt에서 사용자가 값을 입력하지 않고 취소를 누르면 null이 출력됨.
 console.log(typeof age1);    // age1의 type을 확인함. ( 항상 string임 )
 
@@ -198,16 +198,23 @@ console.log(age1);
 
 if(isNaN(age1) || age1 < 0){
     console.log("Please write a real positive number");
-}
-else if(age1 < 18){
+} else if(age1 < 18){
     console.log("You too young.");
-}
-else if(age1 >= 18 && age1 <= 50){
+} else if(age1 >= 18 && age1 <= 50){
     console.log("You can drink");
-}
-else if(age1 > 50 && age1 <= 80){
+} else if(age1 > 50 && age1 <= 80){
     console.log("You should exercise");
-}
-else if(age1>80){
+} else if (age1 === 100) {
+    console.log("wow you are wise");
+} else if(age1 > 80){
     console.log("You can do whatever you want.");
-}
+} 
+// age1 == 100이어도 실행되지 않음. ( age1 > 80 조건을 만족하기 때문 )
+// else if (age1 === 100) {
+//     console.log("wow you are wise");
+// }
+
+
+
+// 3.0 The Document Object
+document.title = "Hello From JS!";
